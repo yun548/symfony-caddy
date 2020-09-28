@@ -16,6 +16,9 @@ You will need docker installed on your machine, you can download docker desktop 
 3. Run the containers
 `$ docker-compose up`
 
-4. Everything is ready ! Browse https://symfony.test to access your application
+4. Install symfony dependencies
+`$ docker-compose exec fpm composer install`
+
+5. Everything is ready ! Browse https://symfony.test to access your application
 
 Feel free to add containers for your favourite tools, such as `mailcatcher`, `rabbitmq`, `elk`...

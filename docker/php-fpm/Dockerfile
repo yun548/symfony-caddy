@@ -42,4 +42,6 @@ ADD php.ini /usr/local/etc/php/
 
 ADD symfony.pool.conf /etc/php7/php-fpm.d/
 
+WORKDIR /var/www/symfony
+
 CMD ["php-fpm"]
