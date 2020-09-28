@@ -1,11 +1,15 @@
-0.0.0.0:80 {
-    root * /srv/public
-    encode gzip
-    php_fastcgi php_fpm:9000
+https://symfony.test {
+    root * /var/www/symfony/public
+
+    php_fastcgi fpm:9000
+
     file_server
+
+    encode gzip
+
+    tls internal
 
     log {
         output file /var/log/caddy/access.log
-        format json
     }
 }
