@@ -1,3 +1,5 @@
+This is an example on how to run locally symfony using caddy.
+
 # Installation
 
 You will need docker installed on your machine, you can download docker desktop [here](https://www.docker.com/products/docker-desktop)
